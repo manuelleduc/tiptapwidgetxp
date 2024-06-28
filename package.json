@@ -1,0 +1,28 @@
+{
+  "name": "tiptapwidgetxp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.0.5",
+    "typescript": "5.5.2",
+    "vite": "5.3.2"
+  },
+  "dependencies": {
+    "@tiptap/core": "2.4.0",
+    "@tiptap/pm": "2.4.0",
+    "@tiptap/starter-kit": "2.4.0",
+    "@tiptap/vue-3": "2.4.0",
+    "@wdns/vue-code-block": "2.3.2",
+    "simply-beautiful": "1.0.1",
+    "vue": "3.4.31",
+    "vue-json-pretty": "2.4.0"
+  }
+}
