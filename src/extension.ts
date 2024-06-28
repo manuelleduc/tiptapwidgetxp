@@ -6,14 +6,15 @@ import ExtensionRootTemplate from "./components/ExtensionRootTemplate.vue";
 export default Node.create({
     name: "vueComponent",
     group: "block",
-    content: 'inline*',
+    content: 'block*',
+    draggable: true,
     parseHTML() {
         return [
             {tag: 'vue-component'}
         ]
     },
     renderHTML({HTMLAttributes}) {
-        return ['vue-component', mergeAttributes(HTMLAttributes)];
+        return ['vue-component', mergeAttributes(HTMLAttributes), 0];
     },
     addNodeView() {
         return VueNodeViewRenderer(ExtensionRootTemplate)
