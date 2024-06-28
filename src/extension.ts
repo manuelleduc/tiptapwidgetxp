@@ -6,7 +6,7 @@ import ExtensionRootTemplate from "./components/ExtensionRootTemplate.vue";
 export default Node.create({
     name: "vueComponent",
     group: "block",
-    atom: true,
+    content: 'inline*',
     parseHTML() {
         return [
             {tag: 'vue-component'}

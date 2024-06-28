@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {NodeViewWrapper, nodeViewProps} from "@tiptap/vue-3";
+import {NodeViewWrapper, nodeViewProps, NodeViewContent} from "@tiptap/vue-3";
 
 const props = defineProps(nodeViewProps);
 
@@ -12,10 +12,13 @@ function increment() {
 
 <template>
   <node-view-wrapper>
-    <div>Hello World {{ node.attrs.count }}</div>
-    <div>
-      <button @click="increment">increment</button>
+    <div contenteditable="false">
+      <div>Hello World {{ node.attrs.count }}</div>
+      <div>
+        <button @click="increment">increment</button>
+      </div>
     </div>
+    <node-view-content></node-view-content>
   </node-view-wrapper>
 </template>
 
